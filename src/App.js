@@ -1,11 +1,16 @@
-import React from 'react'
+// App.js
+import React from 'react';
+import { AppProvider } from './context';
+import KanbanBoard from './components/KanbanBoard';
 
 function App() {
   return (
-    <div>
-      Heyy
-    </div>
-  )
+    <AppProvider>
+      <div className="app">
+        <KanbanBoard />
+      </div>
+    </AppProvider>
+  );
 }
 
-export default App
+export default App;
