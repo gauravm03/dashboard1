@@ -43,7 +43,7 @@ function KanbanBoard() {
       <div className="board">
         {groupedTickets.map((group) => (
           <div key={group.key} className="column">
-            <h2>{group.key}</h2>
+            <div>{group.key}</div>
             {group.tickets
               .sort(sortFunction)
               .map((ticket) => (
