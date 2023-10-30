@@ -1,8 +1,10 @@
 .board{
-    display: flex;
-    gap: 20px;
-    width: 90%;
-    max-width:1400px;
+  justify-content: center;
+  display: flex;
+  gap: 20px;
+  width: 90%;
+  max-width: 2200px;
+  flex-wrap: wrap;
 }
 
 .kanban-board{
@@ -13,7 +15,7 @@
 }
 
 .column{
-    width: 25%;
+    width: 350px;
     display: flex;
     flex-direction: column;
     gap: 20px;
