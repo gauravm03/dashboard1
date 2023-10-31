@@ -1,7 +1,7 @@
 // SortingOptions.js
 import React from 'react';
 import { useAppContext } from '../context';
-
+import "./SortingOptions.css"
 function SortingOptions() {
   const { state, dispatch } = useAppContext();
 
@@ -13,7 +13,7 @@ function SortingOptions() {
 
   return (
     <div className="sorting-options">
-      <label>Sort By:</label>
+      <div className='heading'>ORDERING</div>
       <select value={state.sortingOption} onChange={handleSortingChange}>
         <option value="priority">Priority</option>
         <option value="title">Title</option>

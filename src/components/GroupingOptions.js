@@ -1,7 +1,7 @@
 // GroupingOptions.js
 import React from 'react';
 import { useAppContext } from '../context';
-
+import "./GroupingOptions.css"
 function GroupingOptions() {
   const { state, dispatch } = useAppContext();
 
@@ -13,7 +13,7 @@ function GroupingOptions() {
 
   return (
     <div className="grouping-options">
-      <label>Group By:</label>
+      <div className='heading'>GROUPING</div>
       <select value={state.groupingOption} onChange={handleGroupingChange}>
         <option value="status">Status</option>
         <option value="user">User</option>

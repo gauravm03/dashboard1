@@ -1,0 +1,14 @@
+.grouping-options{
+    display: flex;
+    justify-content: space-between;
+}
+
+select{
+    cursor: pointer;
+    border-radius: 5px;
+    border: 1px solid #a1b3a1;
+    padding: 5px;
+    width: 100px;
+    font-size: 12px;
+    font-weight: 400;
+}
