@@ -22,7 +22,6 @@ function KanbanBoard() {
     }
   }, [dispatch]);
 
-  // Save user's view state to local storage whenever it changes
   useEffect(() => {
     localStorage.setItem("kanbanAppState", JSON.stringify(state));
   }, [state]);
@@ -38,11 +37,7 @@ function KanbanBoard() {
   if (!state.tickets || state.tickets.length === 0) {
     return <div>Loading...</div>;
   }
-  // State for dialog visibility
 
-  // ...
-
-  // Function to toggle the dialog visibility
   const toggleDialog = () => {
     setIsDialogVisible(!isDialogVisible);
   };
@@ -66,10 +61,10 @@ function KanbanBoard() {
               <RiArrowDropDownLine />
             </div>
           </div>
-          {/* Render dialog if isDialogVisible is true */}
+     
           {isDialogVisible && (
             <div className="dialog-box">
-              {/* Add your dialog content here */}
+       
               <GroupingOptions />
           <SortingOptions />
             </div>
