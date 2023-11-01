@@ -1,9 +1,7 @@
-// TicketCard.js
+
 import React from 'react';
 import './TicketCard.css'
 function TicketCard({ ticket }) {
-  // Check if the 'user' property is defined and not null before accessing 'name'
-//   const assignedTo = ticket.user ? ticket.user.name : 'Unassigned';
 
   return (
     <div className="ticket-card">
