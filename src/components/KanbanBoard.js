@@ -12,7 +12,7 @@ import { RiArrowDropDownLine } from "react-icons/ri";
 function KanbanBoard() {
   const { state, dispatch } = useAppContext();
   const [isDialogVisible, setIsDialogVisible] = useState(false);
-  // Load user's view state from local storage on component mount
+
   useEffect(() => {
     const savedState = localStorage.getItem("kanbanAppState");
   
