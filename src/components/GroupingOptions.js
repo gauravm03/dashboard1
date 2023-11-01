@@ -1,4 +1,4 @@
-// GroupingOptions.js
+
 import React from 'react';
 import { useAppContext } from '../context';
 import "./GroupingOptions.css"
